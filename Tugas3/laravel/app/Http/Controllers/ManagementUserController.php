@@ -7,7 +7,10 @@ use Illuminate\Http\Request;
 class ManagementUserController extends Controller
 {
     public function index(){
-        return "method ini nantinya akan digunakan untuk menambah semua data user";
+    
+        $nama ="Alfian Septy";
+        $pelajaran =["Algoritma & Pemograman" , "Kalkulus" , "Pemograman Web"];
+        return view ('home' , compact ('nama' , 'pelajaran'));
     }
     public function create(){
         return "method ini nantinya digunkana untuk menampilkan form untuk menambah data user";
